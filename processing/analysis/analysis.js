@@ -23,6 +23,7 @@
  * - watsonApiKey: "123456"
  * - doc: "image document in cloudant"
  */
+
 function main(args) {
   return new Promise((resolve, reject) => {
     mainImpl(args, (err, result) => {
