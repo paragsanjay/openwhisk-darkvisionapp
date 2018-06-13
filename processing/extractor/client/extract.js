@@ -34,12 +34,12 @@ const doc = payload.doc;
 
 const extractOptions = {
   videoThumbnailSize: 640,
-  speechDuration: 1 * 60 // export only the first 15 minutes of audio
+  speechDuration: 15 * 60 // export only the first 15 minutes of audio
 };
 
 function getFps(durationInSeconds) {
   // this gives around 15 images per video
-  return `1/${Math.ceil(durationInSeconds / 100)}`;
+  return `1/${Math.ceil(durationInSeconds / 15)}`;
 
   // for a more complete analysis,
   // use this code that will extract up to 100 images
